@@ -1,18 +1,4 @@
-loguru
 pycryptodome
-pycryptodomex
+loguru
 python-dotenv
 mysql-connector-python
-
-# Python cache
-__pycache__/
-**/__pycache__/
-*.pyc
-*.pyo
-
-# Init files
-__init__.py
-**/__init__.py
-
-# macOS
-.DS_Store
