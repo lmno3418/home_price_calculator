@@ -2,3 +2,6 @@ pycryptodome
 loguru
 python-dotenv
 mysql-connector-python
+fastapi
+fastapi[standard]
+uvicorn[standard]

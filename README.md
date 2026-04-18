@@ -21,6 +21,7 @@ home_price_calculator/
 │   │   ├── main.py
 │── resources/
 │   ├── config/
+|   |   |── .env
 │   │   ├── config_file.ini
 │   │   ├── db_script.sql
 │── tests/

@@ -20,7 +20,7 @@ try:
     salt = os.getenv("SALT")
 
     if not (key and iv and salt):
-        raise Exception(F"Error while fetching details for key/iv/salt")
+        raise Exception(f"Error while fetching details for key/iv/salt")
 except Exception as e:
     logger.error("Error occurred. Details: %s", e)
     sys.exit(0)

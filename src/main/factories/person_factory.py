@@ -8,7 +8,7 @@ class PersonFactory:
         if person_type.lower() == "labour":
             return Labour(kwargs["first_name"], kwargs["last_name"], kwargs["wage"], kwargs["role"])
         elif person_type.lower() == "mistri":
-            return Mistri(kwargs["first_name"], kwargs["last_name"], kwargs["wage"], kwargs["role"], kwargs["skill"])
+            return Mistri(kwargs["first_name"], kwargs["last_name"], kwargs["wage"], kwargs["role"], kwargs.get("skills", []))
         elif person_type.lower() == "homebuyer":
             return HomeBuyer(kwargs["first_name"], kwargs["last_name"], kwargs["budget"], kwargs["location"])
         else:

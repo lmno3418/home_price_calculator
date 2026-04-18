@@ -1,11 +1,11 @@
 from src.main.models.labour import Labour
 
 class Mistri(Labour):
-    def __init__(self, first_name, last_name, wage, role, skill):
+    def __init__(self, first_name, last_name, wage, role, skills=None):
         super().__init__(first_name, last_name, wage, role)
-        self.skill = skill
+        self.skills = skills if skills else []
 
     def to_dict(self):
         data = super().to_dict()
-        data.update({"skill": self.skill})
+        data.update({"skills": self.skills})
         return data
